@@ -40,7 +40,7 @@ Vagrant.configure(2) do |config|
     npm install -g generator-javascript
     
     # install gvm, go
-    sudo apt-get install bison
+    sudo apt-get install -y bison
     bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
     source /home/vagrant/.gvm/scripts/gvm
     gvm install go1.4.3
