@@ -38,14 +38,16 @@ Vagrant.configure(2) do |config|
     npm install -g npm
     npm install -g yo
     npm install -g generator-javascript
+	npm install -g mocha
     
     # install gvm, go
-    sudo apt-get install -y bison
+    sudo apt-get install -y bison libreadline-dev
     bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
     source /home/vagrant/.gvm/scripts/gvm
     gvm install go1.4.3
     gvm use go1.4.3
     gvm install go1.5.3
     gvm use go1.5.3 --default
+	go get -u github.com/nathany/looper
   SHELL
 end
