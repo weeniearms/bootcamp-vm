@@ -39,6 +39,8 @@ Vagrant.configure(2) do |config|
     npm install -g yo
     npm install -g generator-javascript
 	npm install -g mocha
+	npm install -g webpack
+	npm install -g webpack-dev-server
     
     # install gvm, go
     sudo apt-get install -y bison libreadline-dev
